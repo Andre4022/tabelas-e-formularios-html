@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        form{
+            margin: auto;
+            width: 500px;
+            padding: 10px;
+            text-align: center;
+            border: solid 3px black;
+            border-radius: 8px;
+        }
+
+        .block{
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .block > input{
+            min-width: 40%;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <h1 style="text-align: center;">Formulário de Matrícula</h1>
+        
+        <form action="">
+
+            <label class="block" for="nome">Nome: <input id="nome" type="text"></label>
+            <label class="block" for="email">Email: <input id="email" type="email"></label>
+            <label class="block" for="data">Data : <input id="data" type="date"></label>
+
+            <strong><p>Sexo: </p></strong>
+            <input type="radio">Masculino
+            <input type="radio">Feminino
+
+            <strong><p>Escolha um curso: </p></strong>
+            <label for="si"><input id="si" type="checkbox"> Sistemas de Informação</label>
+            <label for="mat"><input id="mat" type="checkbox"> Matemática</label>
+            <label for="tur"><input id="tur" type="checkbox"> Turismo</label>
+
+            <strong><p>Turno: </p></strong>
+            <select name="" id="">
+                <option value="">Noturno</option>
+                <option value="">Matutino</option>
+                <option value="">Vespertino</option>
+            </select>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
